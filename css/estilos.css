@@ -175,7 +175,8 @@ header label:hover{
   margin-left: -70%;
   transition: all 0.5s;
  top: 80px;
-  
+  z-index: 2; background: 
+  rgb(84, 84, 88);
 
 }
 .menu ul{
