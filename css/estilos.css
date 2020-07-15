@@ -108,7 +108,7 @@ header.site-header{
   display: flex;    
   background-image: url(../img/barrasuperior1.png);
   background-position: center center;
-background-size: cover;      
+  background-size: cover;      
   height:80px;
 }
 .contenido {
@@ -204,7 +204,6 @@ header label:hover{
    .menu  li a{
        display: block;
       padding: 18px;
-  
      
   }   
 }
