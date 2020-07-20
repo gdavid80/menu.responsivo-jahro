@@ -25,11 +25,11 @@
                     <nav class="menu" >
 
                         <ul>
-                            <li><a href="#">EMPRESA</a></li>
-                            <li><a href="">CONTACTO</a></li>
-                            <li><a href="">CATALOGO</a></li>
-                            <li><a href="">NOVEDADES</a></li>
-                            <li><a href="">PUBLICIDAD</a></li>
+                            <li><a href="#empresa">EMPRESA</a></li>
+                            <li><a href="#contacto">CONTACTO</a></li>
+                            <li><a href="#catalogo">CATALOGO</a></li>
+                            <li><a href="#novedades">NOVEDADES</a></li>
+                            <li><a href="#publicidad">PUBLICIDAD</a></li>
                         </ul>
 
                     </nav>
@@ -83,14 +83,17 @@
       </div>
     </hero>
 
-    <main class="imagen-fondo  contenedor centrar-cel ">
+    <main class="imagen-fondo  contenedor  ">
       <div class="imagen-fondo-res  contenedor-resp ">
           <div class="barra1 centrado ">
-            <div class="titulo contenedores">
-                <h1 class="contenedores"></h1>
+            <div class="titulo ">
+              <h1 id="productos-destacados">PRODUCTOS DESTACADOS</h1>
             </div>
             <div class="img-p-d centrar-cel">
-               <img src="img/barrapd.png" class="barra-productos-destacados"  alt="">
+               <img src="img/barra-titulo.png" class="barra-productos-destacados"  alt="">
+            </div>
+            <div class="img-barra-cel centrar-cel">
+              <img src="img/barra-cel.png" alt="">
             </div>
       
             <div class="iconos-producto centrar-cel">
@@ -123,14 +126,20 @@
       </div>
     </main>
 
-    <div class="barra1 centrado contenedor-resp barra1-cel ">
-      <div class="contenedor-quienes-somos centrar-cel">
-      <div class="titulo ">
-        <h1 id="empresa"></h1>
-      </div>
-      <img src="img/barra-titulo.png"   alt="">
-      <br>
-      <br>
+    <div class="img-barra-cel centrar-cel">
+      <img src="img/barra-celu.png" alt="">
+    </div>
+    <div class="barra1 centrado contenedor-resp centrar-cel ">
+      <div class="contenedor-quienes-somos ">
+        <div class="titulo ">
+          <h1 id="empresa">EMPRESA</h1>
+        </div>
+           <img src="img/barra-titulo.png"   alt="" class="img-barra">
+           
+           
+          <br>
+          <br>
+      
       
       <h4>QUIENES SOMOS</h4>
       
@@ -179,7 +188,7 @@
 
       </div>
     </div><!--barra-->
-    <div class="contenedor-carta centrar-cel">
+    <div class="contenedor-carta centrar-recuadros">
         <div class="recuadros contenedores contenedor-resp ">
           
             <div class="carta">
@@ -197,12 +206,15 @@
     </div>
 
     <section class="parlantes contenedor">
+      <div class="img-barra-cel centrar-cel">
+        <img src="img/barra-celu.png" alt="">
+      </div>
       <div class="contenedor-cat centrar-cel">
               <div class="barra1 centrado  contenedores contenedor-resp barra1-cel">
-                <div class="titulo ce">
+                <div class="titulo ">
                     <h1 id="catalogo">CATALOGO</h1>
                 </div>
-                <img src="img/barra-titulo.png"   alt="">
+                <img src="img/barra-titulo.png" class="img-barra"  alt="">
               </div>
 
               <div class="parte-sup contenedores contenedor-resp ">
@@ -251,17 +263,20 @@
     </section>
 
     <section class="formulario contenedor  ">
-      <div class="contenedor-form-titulo centrar-cel">
+      <div class="img-barra-cel ">
+        <img src="img/barra-celu.png" alt="">
+      </div>
+      <div class="contenedor-form-titulo ">
         <div class="barra1 centrado contenedores contenedor-resp barra1-cel ">
           <div class="titulo ">
               <h1 id="contacto">CONTACTO</h1>
         </div>
-          <img src="img/barra-titulo.png"   alt="">
+          <img src="img/barra-titulo.png" class="img-barra"  alt="">
         </div>
         <br>
       </div>
       
-      <div class="contenedor-grande contenedor-resp centrar-cel">
+      <div class="contenedor-grande contenedor-resp ">
         <div class="contenedores">
           <div class="row">
             <div class="col-sm-12 col-lg-3">
@@ -314,10 +329,10 @@
                         <div class="form-group">
                           <div class="row">
                             <div class="col">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" required/>
                             </div>
                             <div class="col">
-                              <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Telefono" data-rule="telefono"/>
+                              <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Telefono" data-rule="telefono"required/>
                             </div> 
                           </div>          
                           <div class="validation"></div>
@@ -349,9 +364,11 @@
           <div class="footer-inicio contenedores contenedor-resp">
             <div class="menu-redes-sociales">
               <nav>
-                <a target="_blank" href="https://www.facebook.com/JAHRO-114847542687741/" data-placement="top" title="Facebook"><i class="fab fa-facebook fa-3x" style="color:#ffffff"></i></a>
+                <div class="rs">
+                <a target="_blank" href="https://www.facebook.com/JAHRO-114847542687741/" data-placement="top" title="Facebook"><i class="fab fa-facebook  fa-3x " style="color:#ffffff" ></i></a>
                 <a target="_blank" href="https://twitter.com/jahrosrl?s=20" data-placement="top" title="Twitter"><i class="fab fa-twitter fa-3x" style="color:#ffffff"></i></a>
                 <a target="_blank" href="https://www.instagram.com/jahrosrl/?igshid=4dxvuppzqy9f" data-placement="top" title="instagram"><i class="fab fa-instagram fa-3x" style="color:#ffffff"></i></a>
+                </div>
               </nav>
               <img src="img/logo.png">       
             </div>    

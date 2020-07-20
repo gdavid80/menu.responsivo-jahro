@@ -22,6 +22,9 @@ img {
   margin: 0 auto;
   
 }
+h4{
+  max-width: 100%;
+}
 
 /*header*/
 /*.logo-marca img{
@@ -135,7 +138,8 @@ header label {
 }
 header label:hover{
   cursor: pointer;
-  background: rgba(59, 58, 58, 0.9);
+  background: rgba(73, 66, 66, 0.3);
+
 }
 .menu ul {
   margin: 0;
@@ -150,14 +154,17 @@ header label:hover{
   
 }
 .menu li:hover {
-  background: rgba(230, 224, 224, 0.1);
+  background: rgba(190, 32, 32, 0);
 }
 .menu li a{
 
   padding: 15px 20px;
-  color: #e9ebf1;
+  color: #ffffff;
   text-decoration: none;
   font-size: 17px;
+}
+.img-barra-cel{
+  display: none;
 }
 /*-------------------------------------------------------*/
 
@@ -170,20 +177,20 @@ header label:hover{
 }
 .menu{
   position: absolute;
-  background: rgba(13, 31, 23, 0.15);
+  background: #1d2024;
   width: 70%;    
   margin-left: -70%;
   transition: all 0.5s;
  top: 80px;
   z-index: 2; background: 
-  rgb(84, 84, 88);
+  rgba(10, 10, 10, 0.9);
 
 }
 .menu ul{
   flex-direction: column;
    }
    .menu li {
-       border-top: 1px solid #b11616;
+       border-top: 1px solid #ffffff;
        height: 45px;
    }
  
@@ -206,7 +213,12 @@ header label:hover{
        display: block;
       padding: 18px;
      
-  }   
+  }  
+  .menu li:hover {
+  background: rgba(190, 32, 32, 0.4);
+}
+
+ 
 }
 
    
@@ -266,13 +278,6 @@ header label:hover{
   margin-bottom:-5px; 
 }
 
-.barra h1{
-  font-size: 1.9rem;
-  color: #ffffff; 
-  position: absolute;
-  top: 46px;
-  right: 887px;  
-}
 
 .centrado{
   max-width: 876px;
@@ -316,14 +321,7 @@ margin-top: 10px;
    max-width: 650px;
    margin: 0 auto;
  }
- .imagen-fondo{
-  background-image: url(../img/fondo-red1.jpg);
-  background-position: center center;
-  background-size: cover;
- 
-  
-  
- }
+
  h4{
   font-weight: bold;
   font-size: 13px;
@@ -335,6 +333,88 @@ margin-top: 10px;
   left: : 250px;
   top: 35px;
 } 
+ 
+}
+@media(max-width:556px) {
+
+  .barra1 p{
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  
+  .barra1 h1{
+    font-size: 9px;
+    color: #ffffff;
+    position: absolute;
+    left:3px;
+    top: 19px;
+  }
+  .centrar-cel{
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .icono:hover img{
+    -webkit-transform: scale(1.2);
+    -webkit-transition-duration: 1s;
+  }
+  .producto img{
+      -webkit-transition: all 5s ease-in-out;
+  }
+  .img-p-d img{
+    display: none;
+    width: 700px!important;
+    height: 60px;
+    
+  }
+  #productos-destacados{
+    font-size: 14px;
+    top: 13px;
+    left: 6px;
+  }
+  .img-barra-cel{
+    display: inline;
+  }
+  .img-barra {
+    display: none;
+  }
+  #empresa{
+    font-size: 14px;
+    top: -28px;
+    left: -12px;
+    
+  }
+  #catalogo{
+    font-size: 14px;
+    top: -28px;
+    left: -12px;
+  }
+  #contacto{
+    font-size: 14px;
+    top: -28px;
+    left: 15px;
+  }
+  .centrar-recuadros{
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .abajo:hover img{
+    -webkit-transform: scale(1.2);
+  -webkit-transition-duration: 1s;
+  }
+  .iconos-producto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+
+
+  }
+ 
+  
+ 
  
 }
 
@@ -442,7 +522,7 @@ footer{
 background-color: black;
 padding-top: 15px;
 padding-bottom: 2.5rem;
-margin-top: -15px;
+margin-bottom: -15px;
 height: 100px;
 
 }
@@ -518,6 +598,8 @@ margin-top: 17px;
 }
 .card-body{
 padding: 0.25rem!important;
+margin-top: 4px;
+
 }
 
 .card{
@@ -528,6 +610,7 @@ padding: 0.25rem!important;
   margin-bottom: 10px!important;
 }
 @media(max-width:768px) {
+ 
   .menu-redes-sociales{
     display: flex;
     justify-content: space-between;
@@ -543,8 +626,46 @@ padding: 0.25rem!important;
   .fas {
     margin-top: 20px!important;
   }
+  .footer{
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 2.5rem;
+    margin-bottom: -15px!important;
+    height: 100px;
+    
+    }
+
 }
 
 .text-center{
     width: 100%;
+  }
+  @media(max-width:486px) {
+    .menu-redes-sociales img{
+      width:100px;
+      height: 16px;
+    }
+    
+    p{
+    text-align: center;
+    }
+  
+    .menu-redes-sociales img{
+      width:116px;
+      height: 21px;
+    }
+    .carta:hover img{
+      -webkit-transform: scale(1.5);
+      -webkit-transition-duration: 1s;
+      
+      }
+      .abajo:hover img{
+        -webkit-transform: scale(1.5);
+      -webkit-transition-duration: 1s;
+      }
+      .arriba:hover img{
+        -webkit-transform: scale(1.5);
+      -webkit-transition-duration: 1s;
+      }
+    
   }
